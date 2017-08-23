@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    //主标题字色
+    <color name="textColor1">#000000</color>
+    //次要信息字色
+    <color name="textColor2">#555555</color>
+    //暗提示色
+    <color name="textColor3">#BBBBBB</color>
+    //错误、警示色
+    <color name="error">#F4333C</color>
+    //重点提醒色
+    <color name="error1">#FF5B05</color>
+    //底色
+    <color name="bgColor">#F5F5F5</color>
+    //轻底色
+    <color name="bgColor1">#F8F8F8</color>
+    //线的颜色
+    <color name="bgView">#DFDFDF</color>
+    //白色
+    <color name="white">#FFFFFF</color>
+    //橘黄色
+    <color name="yellow">#FFA500</color>
+    //绿色
+    <color name="green">#43C118</color>
+
+</resources>

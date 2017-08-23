@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="「来点特别的」"
+        android:textColor="@color/textColor1"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="喝了变美的\n喝了解油腻的\n不是甜品，但却有甜品的满足感\n早上提神喝\n晚上安眠喝\n伴下午茶的\n无咖啡因的\n男人爱喝的"
+        android:textColor="@color/textColor2"
+        android:textSize="13sp" />
+
+</LinearLayout>

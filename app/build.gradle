@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.yunwan.erling"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //沉浸式
+    compile 'com.gyf.barlibrary:barlibrary:2.2.5'
+    //图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Banner
+    compile 'com.youth.banner:banner:+'
+    //最新版本
+    //OkHttp
+    compile 'com.zhy:okhttputils:2.6.2'
+    //FastJson
+    compile 'com.alibaba:fastjson:1.2.30'
+    //butterknife
+    compile 'com.jakewharton:butterknife:5.1.1'
+    //recyclerView通用适配器
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    //recyclerview万能适配器
+    compile 'com.zhy:base-rvadapter:3.0.3'
+    //卡片
+    compile 'com.android.support:cardview-v7:25.1.0'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //左右滑动
+    compile 'com.android.support:design:25.1.0'
+    //6.0动态权限
+    compile 'com.lovedise:permissiongen:0.0.6'
+    //Rxjava
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    //仿IOS弹出dialog
+    compile project(':IosDialog')
+}

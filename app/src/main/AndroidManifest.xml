@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yunwan.erling">
+
+    <!-- 访问网络-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".WelcomeGuideActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".Activity.Mine.MineActivity" />
+        <activity android:name=".Activity.Home.commodity.CommodityInfoActivity" />
+        <activity android:name=".Activity.Mine.myaddress.MyAddressActivity" />
+        <activity android:name=".Activity.Mine.myaddress.AddAddressActivity" />
+        <activity android:name=".Activity.Mine.myaddress.ChangeAddressActivity" />
+        <activity android:name=".Activity.Mine.change.ChangeNameActivity" />
+        <activity android:name=".Activity.Mine.change.ChangeSignActivity" />
+        <activity android:name=".Activity.Mine.order.OrderActivity" />
+        <activity android:name=".Activity.Mine.setting.SettingActivity" />
+        <activity android:name=".Activity.Mine.setting.SetInfoActivity" />
+        <activity android:name=".Activity.Mine.setting.AboutUsActivity" />
+        <activity android:name=".Activity.Mine.MyCollectionActivity" />
+        <activity android:name=".Activity.Mine.MyPageActivity" />
+        <activity android:name=".Activity.Category.GoodListActivity" />
+    </application>
+
+</manifest>
